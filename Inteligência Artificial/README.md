@@ -1,2 +1,2 @@
 * Professor: Alexandre Zamberlan
-* Github: [Tecnicas de IA](github.com/alexandrezamberlan/tecnicasIA)
+* Github: [Tecnicas de IA](https://github.com/alexandrezamberlan/tecnicasIA)
