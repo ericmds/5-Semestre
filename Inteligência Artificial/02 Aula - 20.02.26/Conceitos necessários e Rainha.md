@@ -79,3 +79,32 @@
    * ?ehValido?
    * **?jaVisitei?**
    * ?ehMeta? --→ chegou ao lugar desejado
+
+```java
+public class Rainha {
+  static List<Rainha> visitados = new LinkedList<>();
+
+  int matriz[][];
+  int qtdRainhas;
+
+  public Rainha(int tamanhoTabuleiro) {
+    this.matriz = int(tamanhoTabuleiro, tamanhoTabuleiro);
+    this.qtdRainhas = 0;
+  
+    for(int i = 0; i < this.matriz.size(); i++) {
+      matriz[i][j] = 0;
+    }
+  }
+
+  public Rainha(int proximaRainha) {
+    // Metodo para percorrer os slots/celular para encontrar um slot vago e então depositar uma rainha (linha, coluna)
+  }
+
+  public boolean ehMeta(int tamanhoTabuleiro) {
+    return this.qtdRainha == tamanhoTabuleiro;
+  }
+
+  public boolean ehValido(Rainha novo) {
+    // Metodo que avalie a matriz do novo, verificando se há mais de uma rainha: na coluna, diagonal principal e na diagonal secundaria
+  }
+```
