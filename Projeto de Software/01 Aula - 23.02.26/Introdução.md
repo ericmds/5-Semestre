@@ -52,3 +52,24 @@
 ## Processo de Ciclo de vida de Desenvolvimento de Software
 * Maneira de como será dividido as novas implementação do software
 * Metodologias tradicionais ou Ageis
+
+## Exercício
+### Objetivo
+O objetivo da atividade é que os alunos criem um aplicativo de cadastro de produtos utilizando Java, com uma interface gráfica que permita a inserção de dados e o armazenamento desses dados em um arquivo de texto no formato CSV.
+
+### Requisitos do Sistema
+* Cadastro de Produtos:
+  * O sistema deve permitir o cadastro de produtos com as seguintes informações:
+    * Nome do produto (Texto)
+    * Código do produto (Texto numérico)
+    * Descrição do produto (Texto)
+    * Preço do produto (Decimal)
+Quantidade disponível (Número inteiro)
+
+### Armazenamento em Arquivo CSV:
+* Os dados dos produtos cadastrados devem ser salvos em um arquivo de texto no formato CSV (Comma Separated Values), para que possam ser facilmente lidos, manipulados e importados por outras ferramentas
+* O arquivo CSV deve seguir a seguinte estrutura de colunas:
+  * Código, Nome, Descrição, Preço, Quantidade
+ 
+### Projeto
+* O sistema dever ser representado através de algum projeto (livre, use sua criatividade/ conhecimento).
