@@ -34,12 +34,17 @@
 ### Engenharia de Software
 | Engenharia | Software |
 | -----------|--------- |
-|  | ↳ Conjunto de Instruções |
-|  | ↳ Dados |
-|  | ↳ Documentação |
-|  | ↳ Produto |
+| ↳ Estudo do "passo-a-passo" | ↳ Conjunto de Instruções |
+| ↳ 1. Comunicação (Requisitos) | ↳ Dados |
+| ↳ 2. Planejamento (Custo, tempo, protótipo) | ↳ Documentação |
+| ↳ 3. Projeto (UML) | ↳ Produto |
+| ↳ 4. Desenvolvimento (Código) ||
+| ↳ 5. Entrega (Manutenção, documentação) ||
+* Gerenciamento (com ênfase no planejamento), Q.A. (com ênfase na transição da construção com entrega) e teste estão em todas as etapas da Engenharia (1, 2, 3, 4 e 5)
 
 ### Produto Tradicional x Produto Software
 | Produto Tradicional | Produto Software |
 | ------------------- | ---------------- |
-|| ↳ Não matéria|
+| ↳ Tangível | ↳ Intangível |
+| ↳ Utiliza matéria prima| ↳ Não utiliza matéria prima |
+| ↳ Possui desgate com o tempo| ↳ Desgaste |
