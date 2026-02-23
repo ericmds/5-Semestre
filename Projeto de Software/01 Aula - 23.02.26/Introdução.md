@@ -48,3 +48,7 @@
 | ↳ Tangível | ↳ Intangível |
 | ↳ Utiliza matéria prima| ↳ Não utiliza matéria prima |
 | ↳ Possui desgate com o tempo| ↳ Desgaste |
+
+## Processo de Ciclo de vida de Desenvolvimento de Software
+* Maneira de como será dividido as novas implementação do software
+* Metodologias tradicionais ou Ageis
