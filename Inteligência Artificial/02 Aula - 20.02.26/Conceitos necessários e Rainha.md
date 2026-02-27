@@ -9,7 +9,7 @@
 * Área da Computação com metodologias, técnicas e algoritmos para resolver aqueles tipos de problemas
 
 #### 3. Quais as principais subáreas da Inteligência Artificial
-* Métodos de busca:
+* Métodos de busca: - toda busca é engine/motor
   * **Cegos ou força bruta:** amplitude e profundidade
   * **Heurísticos:** Guloso, Subida de Encosta, A*, Algoritmos Genéticos
 * Redes Neurais
