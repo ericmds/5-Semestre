@@ -1,4 +1,4 @@
-# Correção dos exercícios da [Aula 01](https://github.com/ericmds/5-Semestre/blob/main/Linguagens%20Formais%20e%20Aut%C3%B4matos/01%20Aula%20%7C%2019.02.26/Introdu%C3%A7%C3%A3o.md)
+# Correção dos exercícios da [Aula 01](https://github.com/ericmds/5-Semestre/blob/main/Linguagens%20Formais%20e%20Aut%C3%B4matos/01%20Aula%20-%2019.02.26/Introdu%C3%A7%C3%A3o.md)
 
 # Autômato Finito
 
