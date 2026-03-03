@@ -48,6 +48,7 @@ M₄ = ({a, b, {q₀, q₁, q₂}, σ, q₀, {q₂} )
 
 
 ### L₈ = {W ε {a, b}⁺ | W tem subpalavra aaa}
+<img width="708" height="544" alt="{93A80215-D3C9-484E-A38A-4A5630503D2C}" src="https://github.com/user-attachments/assets/0465be78-ed65-484e-9447-dc6610dcdbfb" />
 
 
 ### L₉ = {W ε {a, b}⁺ | W tem sufixo 10}
