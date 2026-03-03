@@ -51,3 +51,4 @@ M₄ = ({a, b, {q₀, q₁, q₂}, σ, q₀, {q₂} )
 
 
 ### L₉ = {W ε {a, b}⁺ | W tem sufixo 10}
+<img width="530" height="547" alt="{EA799DD7-9BBB-4360-BE2D-815B0D344999}" src="https://github.com/user-attachments/assets/7206c0f5-7f91-476a-b09b-acb7a81a5023" />
