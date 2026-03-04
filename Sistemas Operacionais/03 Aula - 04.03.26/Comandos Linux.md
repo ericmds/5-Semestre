@@ -16,6 +16,8 @@
 * rm nomeArquivo (apaga)
 * gcc programaFonte -o programaExecutavel
    * Ex: gcc um.c -o um
+* top
+* clear (limpa tela) 
 
 # Exemplo
 * mkdir SO
