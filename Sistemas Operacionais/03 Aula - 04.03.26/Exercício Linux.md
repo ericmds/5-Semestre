@@ -1,0 +1,16 @@
+* mkdir usrlab
+* cd usrlab
+* mkdir docs
+* mkdir musicsa
+* mkdir UFN
+* cd UFN
+* mkdir disciplinas
+* cd disciplinas
+* mkdir SO
+* cd SO
+* mkdir trabalhos
+* cd ..
+* mkdir Pesquisa_ordenacao
+* mkdir LinguagemII
+* cd ..
+* mkdir projetos
