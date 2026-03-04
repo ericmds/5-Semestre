@@ -14,6 +14,8 @@
 * mv (mover ou renomear)
 * cd .. (voltar)
 * rm nomeArquivo (apaga)
+* gcc programaFonte -o programaExecutavel
+   * Ex: gcc um.c -o um
 
 # Exemplo
 * mkdir SO
