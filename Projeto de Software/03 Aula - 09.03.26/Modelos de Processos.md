@@ -17,7 +17,8 @@
 * Ideia de adaptação de modelos
 * Regras:
   * Toda metodologia agil é evolucionário - entrega rápida e contínua
- 
+
+## Apresentação - T.D.D
 * Breve história da metodologia
 * Explicação da metodologia + imagem
 * Comparativo, olhando para imagem, mostrar aonde fica cada processo (COM, PLA, PROJ, CONT, ENTR)
