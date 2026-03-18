@@ -2,7 +2,8 @@
 
 ## 1 – Crie um programa com dois processos. As medidas de um terreno retangular devem ser lidas. O processo Filho deve calcular a área do terreno e o processo Pai o perímetro. Todos os resultados obtidos devem ser mostrados ao usuário.
 #### Resolução
-
+```
+```
 ## 2 – Escreva um programa formado por 3 processos concorrentes, que executam um laço de repetição de N interações. Neste laço, cada processo imprime sua identificação. A partir da execução do programa, identifique como acontece o escalonamento dos processos.
 #### Resolução
 
