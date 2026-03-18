@@ -1,7 +1,7 @@
 # Exercício 1
 * Compile e execute o código a seguir, nomeando o fonte como processo.c.
 * Identifique a finalidade de cada chamada ao sistema utilizada
-* A) Quais os valores de PID para cada processo?
+* Quais os valores de PID para cada processo?
 * OBS) Para ver a árvore, abre um novo terminal e digite
   * pstree
   * top
@@ -33,7 +33,7 @@ return 1;
 }
 }
 ```
-* A)O valor do PID do pai é de 4881 e do filho é 4882
+* O valor do PID do pai é de 4881 e do filho é 4882
 
 # Exercicio 2
 * Compile e execute o código a seguir, nomeando o fonte como processo2.c .
