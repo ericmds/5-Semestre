@@ -1,4 +1,4 @@
-# Configurando o Inteliji
+# Configurando o Inteliji - (Aula 10 do Git)
 * Spring Boot
 * Dependecias
   * Dev Tools
