@@ -31,7 +31,7 @@ void *mostraId (void *threadid) {
 }
 
 int main (int argc, char *argv[]) {
-    pthread_t threads[NUM_THREADS]; // Ajustado para 'threads'
+    pthread_t threads[NUM_THREADS];
     int rc;
 
     for (long i=0; i < NUM_THREADS; i++) {
@@ -49,7 +49,7 @@ int main (int argc, char *argv[]) {
         pthread_join(threads[i], NULL);
     }
 
-    printf("Threads finalizadas!\n"); // Adicionado ';' e '\n'
+    printf("Threads finalizadas!\n");
     return 0;
 }
 ```
