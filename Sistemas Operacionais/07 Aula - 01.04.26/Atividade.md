@@ -54,6 +54,7 @@ int main (int argc, char *argv[]) {
 ```
 
 ### 3 – Escreva um programa formado por várias threads, que executam um laço de repetição de N interações para incrementar em 1 uma variável compartilhada. Ao término da execução, verifique o valor final da variável compartilhada.
+* Dica: Declarar uma variável global - contador - todas as threads vão utilizar esse contador
 
 ### 4 – Escreva um programa com duas threads que compartilham um vetor de inteiros tamanho 5 e uma outra variável inteira que conta quantos elementos há no vetor. Uma das threads escreve um dado no vetor e a outra remove um dado no vetor. A execução das threads é contínua.
 * Verifique a execução do programa
