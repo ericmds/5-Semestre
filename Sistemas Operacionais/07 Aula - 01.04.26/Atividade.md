@@ -1,4 +1,15 @@
 ### 1 – Crie um programa com dois threads. As medidas de um terreno retangular devem ser lidas. Um thread deve calcular a área do terreno e outro o perímetro. Todos os resultados obtidos devem ser mostrados ao usuário.
+```c
+/* Crie um programa com dois threads. As medidas de um terreno retangular devem ser lidas. 
+ * Um thread deve calcular a área do terreno e outro o perímetro. 
+ * Todos os resultados obtidos devem ser mostrados ao usuário.
+ */
+ 
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h> //para usar a função exit
+#include <unistd.h> //para usar a função sleep 
+```
 
 ### 2 – Escreva um programa formado por 3 threads, que executam um laço de repetição de N interações. Neste laço, cada thread imprime sua identificação. A partir da execução do programa, identifique como acontece o escalonamento dos threads.
 
