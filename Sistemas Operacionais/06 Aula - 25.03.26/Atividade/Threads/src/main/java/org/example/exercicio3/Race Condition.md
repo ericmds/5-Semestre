@@ -1,0 +1,2 @@
+# Race Condition
+* Ocorre quando duas ou mais threads acessam e modificam dados compartilhados ao mesmo tempo sem mecanismos adequados de sincronização, resultando em comportamentos inconsistentes, imprevisíveis ou incorretos no sistema.
