@@ -1,22 +1,3 @@
-/*
- *  Exemplo de manipulação de threads extraído e adaptado do Livro Aberto
- *  de Sistemas Operacionais, de Carlos Maziero.
- */
-
-#include <pthread.h>
-#include <stdio.h>
-#include <stdlib.h> //para usar a função exit
-#include <unistd.h> //para usar a função sleep 
-
-#define NUM_THREADS 5
-
-void *print_hello (void *threadid)
-{
-	printf ("%ld: Hello World!\n", (long) threadid);/*
- *  Exemplo de manipulação de threads extraído e adaptado do Livro Aberto
- *  de Sistemas Operacionais, de Carlos Maziero.
- */
-
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h> //para usar a função exit
