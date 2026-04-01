@@ -12,6 +12,47 @@
 ```
 
 ### 2 – Escreva um programa formado por 3 threads, que executam um laço de repetição de N interações. Neste laço, cada thread imprime sua identificação. A partir da execução do programa, identifique como acontece o escalonamento dos threads.
+```c
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#define NUM_THREADS 3
+#define N 5
+
+void *mostraId (void *threadid) {
+    long tid = (long) threadid;
+    for (int i=0; i<N; i++) {
+        printf("Thread %ld - iteracao %d\n", tid, i);
+        sleep(1);
+    }
+    pthread_exit(NULL);
+}
+
+int main (int argc, char *argv[]) {
+    pthread_t threads[NUM_THREADS]; // Ajustado para 'threads'
+    int rc;
+
+    for (long i=0; i < NUM_THREADS; i++) {
+        printf("Criando thread %ld\n", i);
+        // Ajustado para 'mostraId' e 'threads'
+        rc = pthread_create(&threads[i], NULL, mostraId, (void *)i);
+        
+        if (rc) {
+            printf("Erro ao criar thread %ld\n", i);
+            exit(-1);
+        }
+    }
+
+    for (int i=0; i < NUM_THREADS; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Threads finalizadas!\n"); // Adicionado ';' e '\n'
+    return 0;
+}
+```
 
 ### 3 – Escreva um programa formado por várias threads, que executam um laço de repetição de N interações para incrementar em 1 uma variável compartilhada. Ao término da execução, verifique o valor final da variável compartilhada.
 
