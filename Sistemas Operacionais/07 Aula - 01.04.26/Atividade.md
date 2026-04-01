@@ -36,7 +36,6 @@ int main (int argc, char *argv[]) {
 
     for (long i=0; i < NUM_THREADS; i++) {
         printf("Criando thread %ld\n", i);
-        // Ajustado para 'mostraId' e 'threads'
         rc = pthread_create(&threads[i], NULL, mostraId, (void *)i);
         
         if (rc) {
