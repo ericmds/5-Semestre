@@ -218,6 +218,7 @@ Isso influencia o algoritmo de escalonamento.
 
 ## Dispatcher
 Responsável por:  
+- Passagem para o modo de usuário / supervisor
 - Troca de contexto  
 - Passar controle da CPU  
 
@@ -225,34 +226,49 @@ Responsável por:
 - Maximizar: uso da CPU, throughput  
 - Minimizar: tempo de espera, tempo de resposta, tempo de retorno  
 
-## Algoritmos (cai muito)
+## Escolha de um processo
+<img width="773" height="337" alt="image" src="https://github.com/user-attachments/assets/62255f27-90e9-4087-aca9-2a0342baa570" />
+
+
+## Algoritmos
 1. **FCFS (FIFO)**  
    - Primeiro que chega, primeiro que executa  
    - Simples  
-   - Pode gerar espera longa  
+   - Pode gerar espera longa
+   -  Geralmente, apresenta tempo de espera longo, pois não favorece os processos I/O bound
+   -  <img width="537" height="267" alt="image" src="https://github.com/user-attachments/assets/d36ba43f-d23e-4896-aeaf-b677b04ceb07" />
+
 
 2. **SJF (Shortest Job First)**  
    - Executa o menor processo primeiro  
    - Ótimo (menor tempo médio de espera)  
-   - Problema: não sabe o tempo exato  
+   - Problema: não sabe o tempo exato
+   - <img width="654" height="356" alt="image" src="https://github.com/user-attachments/assets/04cc214c-6c8a-4755-ae0c-7d5e36b7139f" />
+
 
 3. **Prioridade**  
    - Processo com maior prioridade executa primeiro  
    - Problema: starvation (processo nunca executa)  
-   - Solução: aging (envelhecimento)  
+   - Solução: aging (envelhecimento)
+   - <img width="644" height="321" alt="image" src="https://github.com/user-attachments/assets/59741ad8-2a56-4bc5-b61d-4b445874ab90" />
+
 
 4. **Round Robin (RR)**  
    - Cada processo recebe um tempo (quantum)  
    - Preemptivo  
    - Justo  
-   - Usado em sistemas interativos  
+   - Usado em sistemas interativos
+   - <img width="655" height="341" alt="image" src="https://github.com/user-attachments/assets/400d5ae2-660c-4bd8-84df-81e3ec256516" />
+
 
 5. **Múltiplas Filas**  
    - Várias filas com diferentes prioridades  
 
 6. **Múltiplas Filas com Realimentação**  
    - Processo muda de fila  
-   - Mais eficiente  
+   - Mais eficiente
+   - <img width="696" height="252" alt="image" src="https://github.com/user-attachments/assets/3afa22d5-4c60-439e-9b1a-8ecd85a4da91" />
+
 
 ---
 
@@ -452,7 +468,53 @@ Esses critérios são fundamentais para avaliar a qualidade de um algoritmo de e
 * **Tempo de Retorno (Turnaround)** = tempo de conclusão – tempo de chegada
 * **Tempo de Espera** = tempo de retorno – tempo de CPU
 
+## 6. Considere o seguinte cenário para a Fila de Processos Prontos:
+|Processo|Instante de chegada| Ciclos de CPU | Tempo de Espera | Tempo de Retorno 
+|:-:|:-:|:-:|:-:|:-:|
+|P1|0|10||||
+|P2|2|8||||
+|P3|3|5||||
+* Construa o diagrama de tempo ilustrando a execução dos processos conforme a política de escalonamento FIFO, SJF não-preemtivo e SJF preemptivo. Calcule os tempos de espera e de retorno para cada um dos processos em cada uma das políticas.
 
+## Considere o seguinte conjunto de processos, com duração de surto de CPU expressa em milissegundos, conforme a tabela abaixo. Os processos são considerados como tendo chegado na ordem P1, P2, ..., P5, todos no instante zero.*
+|Processo|Ciclos CPU|Prioridade|
+|:-:|:-:|:-:|
+|P1|10|3|
+|P2|1|1|
+|P3|2|3|
+|P4|1|4|
+|P5|5|2|
+### a) Desenhe quatro diagramas de Gantt que ilustrem a execução desses processos usando os escalonamentos FIFO, SJF, Prioridade não-preemptivo (um número de prioridade mais baixo implica prioridade mais alta) e RR (quantum=3)
+#### FIFO
+<img width="859" height="169" alt="image" src="https://github.com/user-attachments/assets/74d274ca-a100-4355-8380-6d85ec3382fc" />
+
+#### SJF
+<img width="871" height="158" alt="image" src="https://github.com/user-attachments/assets/132b6dc0-0720-4dc7-ab30-d689aceaf727" />
+
+#### Prioridade
+<img width="863" height="151" alt="image" src="https://github.com/user-attachments/assets/7639829c-58fc-41fc-b8a7-b6f4cf575d7f" />
+
+#### RR
+<img width="879" height="108" alt="image" src="https://github.com/user-attachments/assets/c8eab64f-650a-4f6d-8a77-4aad4170ae54" />
+
+### b) Qual é o tempo de retorno de cada processo para cada um dos algoritmos de escalonamento do item a) ?
+* Tempo de Retorno = Tempo de Conclusão − Tempo de Chegada
+   * FIFO: 
+   * SJF: 
+   * Prioridade: 
+   * RR: 
+### c) Qual é o tempo de espera de cada processo para cada um dos algoritmos de escalonamento do item a) ? 
+* Tempo de Espera = Tempo de Retorno − Tempo de CPU
+   * FIFO: 
+   * SJF: 
+   * Prioridade: 
+   * RR: 
+### d) Qual é o tempo médio de espera de cada um dos algoritmos? 
+* Tempo Médio = Soma dos tempos / número de processos
+   * FIFO: 
+   * SJF: 
+   * Prioridade: 
+   * RR: 
 ## 8. Favorecimento de processos curtos (FIFO, RR e Múltiplas Filas com Realimentação)
 No algoritmo FIFO, não há favorecimento de processos curtos, pois os processos são executados na ordem de chegada. Isso pode fazer com que processos curtos fiquem aguardando por longos períodos caso estejam atrás de processos longos na fila.
 
