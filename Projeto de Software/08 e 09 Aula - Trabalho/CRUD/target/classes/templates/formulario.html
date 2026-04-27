@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<div class="container py-4">
+    <div class="card shadow-sm mx-auto" style="max-width: 600px">
+        <div class="card-body p-4">
+
+            <div class="d-flex align-items-center gap-3 mb-4">
+                <h2 class="card-title mb-0">Cadastro de Produto</h2>
+            </div>
+
+            <div class="alert alert-danger" th:if="${erros != null and erros.containsKey('geral')}"
+                 th:text="${erros['geral']}"></div>
+
+            <form method="POST" action="/produto/salvar" th:object="${produto}">
+                <input type="hidden" th:field="*{id}">
+
+                <div class="mb-3">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" class="form-control"
+                           th:field="*{nome}"
+                           th:classappend="${erros != null and erros.containsKey('nome')} ? 'is-invalid'">
+                    <div class="invalid-feedback"
+                         th:if="${erros != null and erros.containsKey('nome')}"
+                         th:text="${erros['nome']}"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Descrição:</label>
+                    <input type="text" class="form-control" th:field="*{descricao}">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Valor:</label>
+                    <input type="number" step="0.01" class="form-control"
+                           th:field="*{valor}"
+                           th:classappend="${erros != null and erros.containsKey('valor')} ? 'is-invalid'">
+                    <div class="invalid-feedback"
+                         th:if="${erros != null and erros.containsKey('valor')}"
+                         th:text="${erros['valor']}"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Quantidade:</label>
+                    <input type="number" class="form-control" th:field="*{quantidade}">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Imagem (URL):</label>
+                    <input type="text" class="form-control" th:field="*{imagem}">
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Categoria:</label>
+                    <select class="form-select" name="categoria.id"
+                            th:classappend="${erros != null and erros.containsKey('categoria')} ? 'is-invalid'">
+                        <option value="">-- Selecione uma categoria --</option>
+                        <option th:each="cat : ${categorias}"
+                                th:value="${cat.id}"
+                                th:text="${cat.nome}"
+                                th:selected="${produto.categoria != null and produto.categoria.id == cat.id}">
+                        </option>
+                    </select>
+                    <div class="invalid-feedback"
+                         th:if="${erros != null and erros.containsKey('categoria')}"
+                         th:text="${erros['categoria']}"></div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="/produto/listar" class="btn btn-secondary">Voltar</a>
+                    <div class="d-flex gap-2">
+                        <input type="reset" class="btn btn-outline-dark" value="Limpar">
+                        <input type="submit" class="btn btn-primary" value="Salvar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
